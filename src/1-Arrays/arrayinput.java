@@ -22,6 +22,10 @@ public class arrayinput {
             array[i] = in.nextInt();
         }
 
+        for (int i = 0; i < 5; i++) {
+            System.out.println(array[i] + "");
+        }
+
 
 
     }
