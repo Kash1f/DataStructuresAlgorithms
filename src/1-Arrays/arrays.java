@@ -6,6 +6,13 @@ public class arrays{
         //store 5 roll numbers in an array
 
         int[] roll_no = new int[5];
+        roll_no[0] = 100;
+        roll_no[1] = 102;
+        roll_no[2] = 103;
+        roll_no[3] = 104;
+        roll_no[4] = 105;
+        roll_no[5] = 106;
+
 
         //directly we can write it as:
 
