@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -46,6 +48,7 @@ public class Input{
 
         //array of objects
 
+        //This line creates a new string array named str with a length of 4. This means it can hold four string elements.
         String[] str = new String[4];
         for(int i=0; 1<str.length;i++){
             str[i] = in.next();
@@ -53,6 +56,6 @@ public class Input{
     }
 
     System.out.println(Arrays.toString(str));
-
     }
 }
+ 
