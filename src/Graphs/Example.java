@@ -6,7 +6,7 @@ class Car{
     }
 }
 
-public class Functions {
+public class Example{
 
     public static void main(String[] args) {
 
