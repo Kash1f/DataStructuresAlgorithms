@@ -1,3 +1,6 @@
+//Stack Data Structure works on the LIFO(Last-In First-Out) method. The object that enters at last will be removed first
+
+
 package Stacks;
 
 import java.util.Stack;
@@ -15,7 +18,15 @@ public class Stacks {
         stack.push("CS2");
         stack.push("Call of duty");
         stack.push("Battlefield");
-        System.out.println(stack);
+        stack.push("RDR2");
+        stack.push("Medal of Honor");
+       
+        
+        // String myFavGame = stack.pop();
+        // System.out.println(stack.peek());
+
+        System.out.println(stack.search("CS2"));
+       
 
     }
 }
