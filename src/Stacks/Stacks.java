@@ -25,8 +25,26 @@ public class Stacks {
         // String myFavGame = stack.pop();
         // System.out.println(stack.peek());
 
-        System.out.println(stack.search("CS2"));
+
+        System.out.println(stack.search("Medal of Honor"));
        
 
     }
 }
+
+
+//uses of stacks:
+
+//1. undo/redo features in text editors
+//2. moving back/forward through browser history
+//3. backtracking algorithms (maze, file directories)
+//4. calling functions (call stack)
+
+
+
+
+
+
+
+
+
