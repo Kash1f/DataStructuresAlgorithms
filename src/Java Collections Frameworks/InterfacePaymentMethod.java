@@ -14,7 +14,14 @@ class CreditCard implements PaymentMethod{
         System.out.println("Payed Via Credit Card");
     }
 }
-public class InterfacePaymentMethod {
+
+class BankTransfer implements PaymentMethod{
+    public void pay(){
+        System.out.println("Payed Via Bank Transfer");
+    }
+}
+
+public class InterfacePaymentMethod{
 
     public static void makePayment(PaymentMethod pm){
         pm.pay();
