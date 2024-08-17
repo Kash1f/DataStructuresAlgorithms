@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Method2 {
 
     // Method to find the sum of first n natural numbers
-    public int findSum(){
+    public int findSum() {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter a number: ");
@@ -18,7 +18,7 @@ public class Method2 {
 
     public static void main(String[] args) {
         Method2 obj = new Method2(); // Create an instance of the Method2 class
-        int result = obj.findSum();  // Call the findSum method using the instance
-        System.out.println("The sum is: " + result);  // Print the result
+        int result = obj.findSum(); // Call the findSum method using the instance
+        System.out.println("The sum is: " + result); // Print the result
     }
 }
