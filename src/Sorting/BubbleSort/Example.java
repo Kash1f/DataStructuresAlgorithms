@@ -3,19 +3,19 @@ package Sorting.BubbleSort;
 public class Example {
     public static void main(String[] args) {
 
-        int nums[] = { 6, 5, 2, 8, 9, 4 };
-        int size = nums.length;
+        int array[] = { 9, 1, 8, 2, 7, 3, 6, 4, 5};
+        int size = array.length;
         int temp = 0;
 
         System.out.println("Before Sorting");
-        for (int num : nums) {
+        for (int num : array) {
             System.out.println(num + "");
         }
 
         for(int i=0; i<size;i++){
             for(int j=0;j<size;j++){
-                if(nums[j] > nums[j+1]){
-                    temp = nums[j];
+                if(array[j] > array[j+1]){
+                    temp = array[j];
                 }
             }
 
