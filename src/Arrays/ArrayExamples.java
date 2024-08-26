@@ -17,9 +17,9 @@ public class ArrayExamples {
         // This continues until i = 4, where arr[i] is arr[4], which gives you 19.
 
         //all indeces less than 5
-        // for (int i = 0; i < array.length; i++) {
-        //     System.out.println(array[i]);
-        // }
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
 
 
         //Enhanced For Loop/For each Loop
