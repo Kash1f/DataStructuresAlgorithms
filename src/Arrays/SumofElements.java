@@ -7,7 +7,7 @@ public class SumofElements {
         int sum = 0;
 
         for(int i = 0; i <= array.length-1; i++){
-            sum = sum + array[i]; // 5+2+7++8+4
+            sum = sum + array[i]; // 5+2+7+8+4
         }
     }
 }
