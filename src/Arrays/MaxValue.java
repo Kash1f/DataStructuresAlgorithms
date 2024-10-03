@@ -3,18 +3,19 @@ package Arrays;
 import java.util.Arrays;
 
 public class MaxValue {
+
     public static void main(String[] args) {
-        int[] arr = {1, 4, 24, 10, 30};
-        System.out.println(max(arr));
-    }
-    static int max(int[] arr){
-        int maxVal = arr[0];
-        for(int i = 1; i < arr.length; i++){
-            if (arr[i] > maxVal){
-                maxVal = arr[i];
+
+        int a[] = { 50, 30, 40, 20, 100 };
+
+        int max = a[0];
+
+        for(int i = 1; i < a.length; i++){
+            if(a[i] > max){
+                max = a[i];
             }
         }
-        return maxVal;
+        System.out.println(max);
     }
-   
+
 }
