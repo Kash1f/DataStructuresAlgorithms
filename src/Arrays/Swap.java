@@ -6,14 +6,22 @@ import java.util.Arrays;
 
 public class Swap{
     public static void main(String[] args) {
-        int arr[] = {1, 4, 66, 88, 22};
-        swap(arr, 1, 4);
-        System.out.println(Arrays.toString(arr));
-    }
+        int a = 10, b = 20;
+        System.out.println("Before Swapping Values are: " + a + "  " +b);
 
-    static void swap(int arr[], int index1, int index2){
-        int temp = arr[index1];
-        arr[index1] = arr[index2];
-        arr[index2] = temp;
+
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("Before Swapping Values are: " + a + "  "  + b);
+
+
     }
 }
+
+
+
+
+
+
