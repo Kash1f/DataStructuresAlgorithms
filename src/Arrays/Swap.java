@@ -30,11 +30,13 @@ public class Swap {
 
         //Logic 4 - Bitwise XOR (^)
 
-            a = a ^ b;
-            b = a ^ b;
-            a = a ^ b;
+            a = a ^ b; //10^20 = 30;
+            b = a ^ b; //30^20 = 10;
+            a = a ^ b; //30^10 = 20;
 
+            //Logic 5 - Single Statement
 
+            b = a + b - (a=b);
 
         System.out.println("After Swapping Values are: " + a + "  " + b);
 
