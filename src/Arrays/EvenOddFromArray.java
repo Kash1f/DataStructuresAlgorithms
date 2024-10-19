@@ -11,10 +11,11 @@ public class EvenOddFromArray {
         // }
         // }
 
-        //This loop will retrieve Each value of array a[] and divide value by 2, here value contains Each element of the array
+        // This loop will retrieve Each value of array a[] and divide value by 2, here
+        // value contains Each element of the array
         for (int value : a) {
             if (value % 2 == 0)
-                System.out.println(value);
+                System.out.println(value); // 2 //4 //6
         }
 
         // System.out.println("Odd Numbers: ");
@@ -23,6 +24,11 @@ public class EvenOddFromArray {
         // System.out.println(a[i]);
         // }
         // }
+
+        for (int value : a) {
+            if (value % 2 != 0)
+                System.out.println(value); // 2 //4 //6
+        }
 
     }
 }
