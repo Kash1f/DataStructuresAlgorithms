@@ -6,7 +6,7 @@ public class StringReverse {
         // Define a string and print it in reverse
 
         // Instead of taking user input, we will directly define a string in the code.
-        String input = "hello";  // The string to be reversed
+        String input = "reverse";  // The string to be reversed
 
         // Convert the input string into a character array
         // This will create an array of characters from the input string.

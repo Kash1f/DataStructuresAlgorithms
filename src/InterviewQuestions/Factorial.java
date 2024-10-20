@@ -19,14 +19,14 @@ public class Factorial {
 
 
         //Descending number -> 5 * 4 * 3 * 2 * 1
-        int num2 = 5;
+        // int num2 = 5;
 
-        long factorial2 = 1;
+        // long factorial2 = 1;
 
-        for(int i = num2; i >= 1; i--){
-            factorial2 = factorial2 * i;
-        }
-        System.out.println("Factorial from method 2 is: " + factorial2);
+        // for(int i = num2; i >= 1; i--){
+        //     factorial2 = factorial2 * i;
+        // }
+        // System.out.println("Factorial from method 2 is: " + factorial2);
     }
 }
 

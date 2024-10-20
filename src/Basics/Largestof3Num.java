@@ -38,5 +38,5 @@ a>b and a>c --> a is largest
 b>a and b>c --> b is largest
 if not both then c is largest
 
-
+Yahan jesay 3 numbers hain to lets say a agar b se bara hua and c se bhi bara hua to a largest hojaiga and similarly b a se bara hua and c se to b largest nahi to c largest
  */
