@@ -1,3 +1,4 @@
+package JavaCollectionsFrameworks;
 
 interface PaymentMethod{
     void pay();
