@@ -18,4 +18,7 @@ public class ArrayListExample {
     }
 }
 
-// interface ka kabhi object nahi banta
+//interface ka kabhi object nahi banta
+
+//Arraylist is the class which implememts the List interface
+
