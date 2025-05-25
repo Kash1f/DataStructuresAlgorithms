@@ -1,9 +1,14 @@
 package Basics;
 
+import java.util.Scanner;
+
 public class Vowel {
     public static void main(String[] args) {
 
-        char v = 'e';
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a character: ");
+        char v = sc.next().charAt(0);
 
         if (v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u') {
             System.out.println("Vowel");
