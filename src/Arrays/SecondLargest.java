@@ -2,41 +2,50 @@ package Arrays;
 
 public class SecondLargest {
 
-    public static void main(String[] args) {
-        // Initialize an array with some integers
-        int a[] = {50, 30, 40, 20, 100};
+    static int secondLargest(int[] a) {
+        if (a.length < 2) {
+            return -1; //not enough elements
+        }
 
-        // Initialize max and secondMax to the smallest possible integer value
-        // This ensures that any value in the array will be larger than these initial values
-        int max = Integer.MIN_VALUE; // This will store the maximum value found
-        int secondMax = Integer.MIN_VALUE; // This will store the second maximum value found
+        int max1, max2;
 
-        // Loop through each element in the array
-        for (int i = 0; i < a.length; i++) {
-            // Check if the current element is greater than the current max
-            if (a[i] > max) {
-                // Before updating max, assign the current max value to secondMax
-                // This is because the current max will become the second maximum
-                secondMax = max; // Update secondMax to the previous max
-                max = a[i]; // Update max to the current element
-            } 
-            // Check if the current element is greater than secondMax but not equal to max
-            
-            
-            else if (a[i] > secondMax && a[i] != max) {
-                // Update secondMax to the current element if it's greater than secondMax
-                secondMax = a[i]; // Update secondMax to the current element
+        //initialize max1 and max2 based on first two elements
+        if (a[0] > a[1]) {
+            max1 = a[0];
+            max2 = a[1];
+        } else {
+            max1 = a[1];
+            max2 = a[0];
+        }
+
+        //traverse the rest of the array starting from index 2
+        for (int i = 2; i < a.length; i++) {
+            if (a[i] > max1) {
+                // New largest found, shift max1 to max2
+                max2 = max1;
+                max1 = a[i];
+            } else if (a[i] > max2 && a[i] != max1) {
+                // New second largest found (and it's not equal to max1)
+                max2 = a[i];
             }
         }
 
-        // Print the maximum value found in the array
-        System.out.println("Max value: " + max);
-        // Print the second maximum value found in the array
-        // If secondMax is still Integer.MIN_VALUE, it indicates that there was no valid second maximum
-        if (secondMax == Integer.MIN_VALUE) {
-            System.out.println("Second Max value: Not found (all elements may be equal)");
-        } else {
-            System.out.println("Second Max value: " + secondMax);
-        }
+        return max2;
+    }
+
+    public static void main(String[] args) {
+        //test cases
+        int[] arr1 = { 12, 35, 1, 10, 34, 1 };
+        int[] arr2 = { 10, 5, 10 };
+        int[] arr3 = { 10, 10, 10 };
+
+        System.out.println("Array 1: " + java.util.Arrays.toString(arr1));
+        System.out.println("Second largest: " + secondLargest(arr1));
+
+        System.out.println("\nArray 2: " + java.util.Arrays.toString(arr2));
+        System.out.println("Second largest: " + secondLargest(arr2));
+
+        System.out.println("\nArray 3: " + java.util.Arrays.toString(arr3));
+        System.out.println("Second largest: " + secondLargest(arr3));
     }
 }

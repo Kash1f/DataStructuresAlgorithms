@@ -3,7 +3,7 @@ package Basics;
 public class PrimeNumber { // This defines a public class named PrimeNumber
     public static void main(String[] args) { // The main method is the entry point of the program
 
-        int num = 7; // Declare an integer variable 'num' and initialize it with the value 7
+        int num = 7 ; // Declare an integer variable 'num' and initialize it with the value 7
         int count = 0; // Declare another integer variable 'count' to keep track of how many divisors
                        // 'num' has
 
