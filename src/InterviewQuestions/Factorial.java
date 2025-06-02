@@ -33,8 +33,7 @@ public class Factorial {
 
 //Logic behind this problem:
 
-// We have to multiply at each point, so in order to multiply 5 values from 1-5, we need to loop through them and multiply each value of loop to 
-// the factorial variable which is holding 1 initially but will change according to the condition when we will multiply it by value of i.
+// We have to multiply at each point, so to multiply 5 values from 1-5, we need to loop through them and multiply each value of loop to the factorial variable which is holding 1 initially but will change according to the condition when we will multiply it by value of i.
 
 // Humay har point pe multiply karna hai numbers ko, to agar 5 ka factorial nikalne k liye 1-5 multiplication karni hai to loop karna parega from 
 // 1-5, pehle factorial variable banadia hai jiski value 1 rakhdi hai taa k uski value loop k accordingly change ho kyun k hum factorial variable 
